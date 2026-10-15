@@ -2,12 +2,11 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "IKMSB | MANGNGARO - Merawat Ingatan Leluhur Mamasa",
+  title: "IKMSB Malang",
   description:
     "Eksplorasi tradisi sakral Mangngaro dari Mamasa, Sulawesi Barat bersama IKMSB. Merawat ingatan leluhur, filosofi Banua Sura', serta kustomisasi 2D karakter busana adat interaktif.",
   keywords: [
     "IKMSB",
-    "Mangngaro",
     "Mamasa",
     "Sulawesi Barat",
     "Banua Sura",
@@ -17,7 +16,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "IKMSB Budaya" }],
   openGraph: {
-    title: "IKMSB | MANGNGARO: Merawat Ingatan Leluhur Mamasa",
+    title: "IKMSB Malang",
     description:
       "Jelajahi keagungan tradisi Mangngaro, arsitektur Banua Sura', dan buat avatar karakter adat Mamasa secara interaktif.",
     type: "website",
