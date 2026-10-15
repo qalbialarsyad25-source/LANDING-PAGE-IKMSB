@@ -22,6 +22,11 @@ export const metadata: Metadata = {
     type: "website",
     locale: "id_ID",
   },
+  icons: {
+    icon: "/images/logo_ikmsb.png",
+    shortcut: "/images/logo_ikmsb.png",
+    apple: "/images/logo_ikmsb.png",
+  },
 };
 
 export default function RootLayout({
