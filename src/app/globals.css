@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary-green: #0d3d24;
+    --primary-forest: #134e2f;
+    --dark-forest: #072314;
+    --emerald-accent: #198754;
+    --gold-accent: #cfa847;
+    --gold-light: #f3e8c8;
+    --clean-bg: #fdfefd;
+    --surface-soft: #f4f8f5;
+    --surface-card: #ffffff;
+    --text-primary: #0a2617;
+    --text-secondary: #325340;
+    --text-muted: #5e7e6d;
+    --border-subtle: #dbe8e0;
+  }
+
+  body {
+    background-color: var(--clean-bg);
+    color: var(--text-primary);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+}
+
+/* Mamasa Passura & Wind Background Pattern */
+.bg-mamasa-pattern {
+  background-image: 
+    radial-gradient(circle at 15% 20%, rgba(19, 78, 47, 0.04) 0%, transparent 40%),
+    radial-gradient(circle at 85% 60%, rgba(207, 168, 71, 0.05) 0%, transparent 45%),
+    url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23134e2f' fill-opacity='0.035' fill-rule='evenodd'%3E%3Cpath d='M40 0l20 20-20 20L20 20 40 0zm0 40l20 20-20 20-20-20 20-20zM0 40l20-20 20 20-20 20L0 40zm80 0l-20-20-20 20 20 20 20-20z'/%3E%3Ccircle cx='40' cy='40' r='3' fill='%23cfa847' fill-opacity='0.06'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.bg-wind-flow {
+  background-image: url("data:image/svg+xml,%3Csvg width='120' height='60' viewBox='0 0 120 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 30 Q 30 15, 60 30 T 120 30' fill='none' stroke='%23134e2f' stroke-width='1.2' stroke-opacity='0.06' stroke-dasharray='4,6'/%3E%3Cpath d='M10 45 Q 40 30, 70 45 T 130 45' fill='none' stroke='%23cfa847' stroke-width='1' stroke-opacity='0.05'/%3E%3C/svg%3E");
+}
+
+/* Anti-gravity Floating Keyframes */
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(0.4deg);
+  }
+}
+
+@keyframes floatHigher {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-18px) scale(1.01);
+  }
+}
+
+@keyframes breezeDrift {
+  0% {
+    transform: translateX(-10px) translateY(0px);
+    opacity: 0.2;
+  }
+  50% {
+    transform: translateX(15px) translateY(-8px);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateX(-10px) translateY(0px);
+    opacity: 0.2;
+  }
+}
+
+.animate-float-gentle {
+  animation: floatGentle 6s ease-in-out infinite;
+}
+
+.animate-float-higher {
+  animation: floatHigher 8s ease-in-out infinite;
+}
+
+.animate-breeze-drift {
+  animation: breezeDrift 7s ease-in-out infinite;
+}
+
+/* Glassmorphism Forest Glass */
+.forest-glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(19, 78, 47, 0.12);
+}
+
+.forest-glass-dark {
+  background: rgba(13, 61, 36, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(207, 168, 71, 0.25);
+  color: #fdfefd;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f6f3;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #256b46;
+  border-radius: 9999px;
+  border: 2px solid #f1f6f3;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0d3d24;
+}
+
+/* Sembunyikan floating indicator / badge DevTools Next.js ("N") */
+nextjs-portal,
+[data-nextjs-toast],
+#nextjs-dev-overlay,
+[data-nextjs-dev-tools-button],
+div[data-nextjs-dev-tools-button] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
