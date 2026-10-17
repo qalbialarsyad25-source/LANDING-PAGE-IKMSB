@@ -11,27 +11,23 @@ export default function AboutMangngaro() {
   const ritualStages = [
     {
       step: "01",
-      title: "Ma'kombongan (Musyawarah Adat)",
-      desc: "Keluarga besar berkumpul di Banua Sura' untuk bermusyawarah, menyatukan niat, menetapkan hari baik sesuai siklus alam, serta mempersiapkan tenun pusaka baru.",
-      detail: "Melibatkan pemangku adat (Tomakaka) dan seluruh keturunan rumpun keluarga yang tersebar di perantauan.",
+      title: "Persiapan & Penandanan Jenazah",
+      desc: "Segera setelah seseorang dinyatakan meninggal dunia, tubuhnya tidak dibaringkan melainkan diatur dalam posisi duduk diatas kursi, jenazah kemudian dimandikan dan diriasi wajahnay dan dipakaikan baju adat lengkap beserta perhiasan seperti orang masih hidup",
     },
     {
       step: "02",
-      title: "Pembersihan Raga Leluhur",
-      desc: "Peti makam batu (Liang) dibuka dengan penuh khidmat. Jasad atau tulang belulang leluhur dibersihkan secara teliti menggunakan air suci pegunungan dan dedaunan wangi alami.",
-      detail: "Diiringi doa-doa kuno penghormatan dan permohonan restu keselamatan bagi seluruh sanak famili.",
+      title: "Penyemayaman di Bilik Pelaminan",
+      desc: "Jenazah yang sudah didandani rapi ditempatkan di dalam ruang ramu rumah tongkonan, pihak keluarga membuat bilik khusus yang dihiasi dekorasi megah menyerupai pelaminan pesta pernikahan.",
     },
     {
       step: "03",
-      title: "Penggantian Busana Tenun Baru",
-      desc: "Inilah puncak ritual 'Mangngaro'. Busana lama digantikan dengan kain tenun baru bermotif pusaka Mamasa (Sambur atau Pa'tannun) yang ditenun secara khusus dengan tangan.",
-      detail: "Warna hijau zamrud, putih suci, dan aksen emas melambangkan kesuburan, kesucian, dan martabat luhur leluhur.",
+      title: "Masa Penjagaan",
+      desc: "Prosesi duduk ini berlangsung selama sehari semalam sepanjang waktu ini. masyarakat dan keluarga secara adat memperlakukan jenzah tersebut bukan sebagai orang mati, melainkan sebagai orang yang hanya sedang sakit",
     },
     {
       step: "04",
-      title: "Pesta Syukur & Silaturahmi Akbar",
-      desc: "Penyampaian rasa syukur melalui jamuan adat bersama, alunan musik gendang Mamasa, tarian sakral Bulu Londong, dan penguatan persaudaraan lintas generasi.",
-      detail: "Menjadi perekat kekerabatan paling kokoh yang menyatukan generasi muda dengan akar leluhurnya.",
+      title: "Penyembelihan kerbau & Peniduran Kembali",
+      desc: "Setelah sehari semalam selesai, ritual diakhiri dengan menyembelih seekor kerbau yang disebut sebagai korban pabbambangan, Dengan disembelihnya kerbau ini, status jenazah resmi dinyatakan meninggal dunia.",
     },
   ];
 
@@ -207,15 +203,6 @@ export default function AboutMangngaro() {
                 >
                   {stage.desc}
                 </p>
-                <div
-                  className={`pt-2 border-t text-[11px] font-medium ${
-                    activeStage === idx
-                      ? "border-white/15 text-[#cfa847]"
-                      : "border-gray-200 text-[#134e2f]"
-                  }`}
-                >
-                  {stage.detail}
-                </div>
               </motion.div>
             ))}
           </div>
